@@ -2,7 +2,7 @@
 
 We establish coding contentions in order to produce work that is legible, consistent and predicatble. By maintaing uniformity in our styles it we strive to share code more efficiently, minimizing time required to understand nuances. Please do your part to adhere to the conventions set forth in this manual, and kindly notify others — ideally in comments in pull requests — where there are deviations. 
 
-There are be legacy files, generated prior to this manual's creation, that do not conform to our conventions. If you're working on an older project, be consistent with what's already there. 
+There will be legacy files, generated prior to this manual's creation, that do not conform to our conventions. If you're working on an older project, be consistent with what's already there. 
 
 
 ## Repository Naming
