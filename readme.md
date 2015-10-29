@@ -8,7 +8,7 @@ There will be legacy files, generated prior to this manual's creation, that do n
 ## Repository Naming
 __Repo names should be kebab-case:__
 
-Everytown Vermont should be `everytown-vermont`
+ACS Cancer Atlas should be `acs-cancer-atlas`
 
 
 __Articles and prepositions should be ommitted from names__
@@ -30,6 +30,8 @@ General Electric Ideas Lab Emails should be `ge-ideas-lab-emails`
 ## Git Commits
 
 Commit messages should be prefixed with the ticket number that the work corresponds to. 
+
+`#123 - detailed commit message`
 
 ## Languages
 - [JavaScript](/style/javascript.md)
