@@ -1,6 +1,6 @@
 # Coding Conventions
 
-We establish coding contentions in order to produce work that is legible, consistent and predicatble. By maintaing uniformity in our styles it we strive to share code more efficiently, minimizing time required to understand nuances. Please do your part to adhere to the conventions set forth in this manual, and kindly notify others — ideally in comments in pull requests — where there are deviations. 
+We establish coding conventions in order to produce work that is legible, consistent and predicatble. By maintaing uniformity in our styles it we strive to share code more efficiently, minimizing time required to understand nuances. Please do your part to adhere to the conventions set forth in this manual, and kindly notify others — ideally in comments in pull requests — where there are deviations. 
 
 There will be legacy files, generated prior to this manual's creation, that do not conform to our conventions. If you're working on an older project, be consistent with what's already there. 
 
@@ -16,7 +16,7 @@ __Articles and prepositions should be ommitted from names__
 Bank of America Heatmap should be `bank-america-heatmap`
 
 
-__When a repository is for a businesses's primary web presence, use the company name as the repo name.__
+__When a repository is for a company's primary web presence, use the company name as the repo name.__
 
 Chicago Community Trust should be `chicago-community-trust`
 
