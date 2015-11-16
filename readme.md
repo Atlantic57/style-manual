@@ -22,16 +22,21 @@ Chicago Community Trust should be `chicago-community-trust`
 
 __If creating a microsite or product for a client, prefix the repo with the company's name (acronmys preferred for longer companies) and describe the project.__
 
-General Electric Ideas Lab Emails should be `ge-ideas-lab-emails`
+Chicago Community Trust email templates should be `cct-email-templates`
 
 
 ## File Naming
+
 
 ## Git Commits
 
 Commit messages should be prefixed with the ticket number that the work corresponds to. 
 
 `#123 - detailed commit message`
+
+## Pull Requests
+Development for features should be done on separate branches and merged in via pull requests. PRs should be assigned to at least one other developer and approved prior to merge, but merging should be done by the developer submitting the request. 
+
 
 ## Languages
 - [JavaScript](/style/javascript.md)
