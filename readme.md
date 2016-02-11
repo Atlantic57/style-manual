@@ -42,5 +42,6 @@ Development for features should be done on separate branches and merged in via p
 - [JavaScript](/style/javascript.md)
 - [HTML](/style/html.md)
 - [SCSS](/style/scss.md)
+- [TWIG](/style/twig.md)
 - [Python](/style/python.md)
 - [PHP](/style/php.md)
