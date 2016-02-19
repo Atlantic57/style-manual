@@ -12,7 +12,7 @@ We use __two spaces__ for indentation rather than tabs.
 
 Put one (and only one) space after the start of a delimiter ({{, {%, and {#) and before the end of a delimiter (}}, %}, and #}):
 
-```
+```html
 {{ foo }}
 {# comment #}
 {% if foo %}{% endif %}
@@ -105,19 +105,20 @@ Passing parameters to include files using `with` affords us most of the function
 ```
 {# index.twig #}
 {% for article in articles %}
-	{% include "modules/article-preview.twig" with { 'mode': 'tall' } only %}
+	{% include "modules/article-preview.twig" with { 'article': article, 'mode': 'tall' } only %}
 {% endfor %}
 ```
 
 And our include would look like:
 
-```
+```html
 {# mocules/article-preview.twig #}
+{# article [object] the article content that we're passing in #}
 {# mode [string] adds a modifier class to the container to control display #}
 
 <article class="article article--{{ mode }}">
-	<h2>Article Title</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu elit nulla. Pellentesque massa urna, semper sed consequat consectetur, dignissim viverra est.</p>
+	<h2>{{ article.title }}</h2>
+	<p>{{ article.title }}</p>
 </article>
 ```
 
