@@ -26,7 +26,7 @@ When using the whitespace control character, do not put any spaces between it an
 {%- if foo -%}{%- endif -%}
 ```
 
-Put one (and only one) space before and after the following operators: comparison operators (==, !=, <, >, >=, <=), math operators (+, -, /, *, %, //, **), logic operators (not, and, or), ~, is, in, and the ternary operator (?:):
+Put one (and only one) space before and after the following operators: comparison operators (`==`, `!=`, `<`, `>`, `>=`, `<=`), math operators (`+`, `-`, `/`, `*`, `%`, `//`, `**`), logic operators (`not`, `and`, `or`), `~`, `is`, `in`, and the ternary operator (`?:`):
 
 ```
 {{ 1 + 2 }}
@@ -34,7 +34,7 @@ Put one (and only one) space before and after the following operators: compariso
 {{ true ? true : false }}
 ```
 
-Put one (and only one) space after the : sign in hashes and , in arrays and hashes:
+Put one (and only one) space after the `:` sign in hashes and `,` in arrays and hashes:
 
 ```
 {{ [1, 2, 3] }}
@@ -54,7 +54,7 @@ Do not put any spaces before and after string delimiters:
 {{ "foo" }}
 ```
 
-Do not put any spaces before and after the following operators: |, ., .., []:
+Do not put any spaces before and after the following operators: `|`, `.`, `..`, `[]`:
 
 ```
 {{ foo|upper|lower }}
