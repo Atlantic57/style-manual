@@ -75,7 +75,7 @@ class Foo
 
 #### 4.2. Properties
 
-_TODO: We need to decide whether we want to use `$StudlyCaps`, `$camelCase`, or `$under_score` for property names sense none of the PSR's make a reccomendation regarding this. I (Tommy) think we should avoid `$StudlyCaps` so those are reserved for classes and use either `$camelCase` or `$under_score`._
+_TODO: We need to decide whether we want to use `$StudlyCaps`, `$camelCase`, or `$under_score` for property names since none of the PSR's make a reccomendation regarding this. I (Tommy) think we should avoid `$StudlyCaps` so those are reserved for classes and use either `$camelCase` or `$under_score`._
 
 #### 4.3. Methods
 
