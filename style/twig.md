@@ -10,7 +10,7 @@ This can all be found on Twig's [official documentation](http://twig.sensiolabs.
 
 We use __two spaces__ for indentation rather than tabs. 
 
-Put one (and only one) space after the start of a delimiter ({{, {%, and {#) and before the end of a delimiter (}}, %}, and #}):
+Put one (and only one) space after the start of a delimiter (`{{`, `{%`, and `{#`) and before the end of a delimiter (`}}`, `%}`, and `#}`):
 
 ```html
 {{ foo }}
