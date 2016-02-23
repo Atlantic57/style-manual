@@ -36,7 +36,7 @@ Commit messages are comprised of 3 parts:
 * A longer description of changes contained in commit (max line-length 72 char)
 * A footer that links to relevant pivotal/git issues.  If using pivotal, one may  
   include the relevant pivotal id's along with the scm post-commit keywords.  
-  i.e. `[Fixes #12345789]` or `[Finished #123456768`]
+  i.e. `[Fixes #12345789]` or `[Finished #123456768`]  
   Further reading here: https://www.pivotaltracker.com/help/api?version=v3#scm_post_commit_message_syntax
 
 A git client like gitx may provide guidelines for adhereing to a max-length.
