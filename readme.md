@@ -30,9 +30,31 @@ Chicago Community Trust email templates should be `cct-email-templates`
 
 ## Git Commits
 
-Commit messages should be prefixed with the ticket number that the work corresponds to. 
+Commit messages are comprised of 3 parts:
 
-`#123 - detailed commit message`
+* A short description of what is contained in the commit (max line-length 50 char)
+* A longer description of changes contained in commit (max line-length 72 char)
+* A footer that links to relevant pivotal/git issues
+
+A git client like gitx may provide guidelines for adhereing to a max-length.
+
+Example: 
+```
+Fixed bug where user can't signup.
+
+Users were unable to register if they hadn't visited the plans
+and pricing page because we expected that tracking
+information to exist for the logs we create after a user
+signs up.  I fixed this by adding a check to the logger
+to ensure that if that information was not available
+we weren't trying to write it.
+
+[Fixes #2873942]
+```
+
+[Further reading](http://ablogaboutcode.com/2011/03/23/proper-git-commit-messages-and-an-elegant-git-history/)
+
+
 
 ## Pull Requests
 Development for features should be done on separate branches and merged in via pull requests. PRs should be assigned to at least one other developer and approved prior to merge, but merging should be done by the developer submitting the request. 
