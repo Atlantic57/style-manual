@@ -34,7 +34,10 @@ Commit messages are comprised of 3 parts:
 
 * A short description of what is contained in the commit (max line-length 50 char)
 * A longer description of changes contained in commit (max line-length 72 char)
-* A footer that links to relevant pivotal/git issues
+* A footer that links to relevant pivotal/git issues.  If using pivotal, one may  
+  include the relevant pivotal id's along with the scm post-commit keywords.  
+  i.e. `[Fixes #12345789]` or `[Finished #123456768`]
+  Further reading here: https://www.pivotaltracker.com/help/api?version=v3#scm_post_commit_message_syntax
 
 A git client like gitx may provide guidelines for adhereing to a max-length.
 
@@ -51,7 +54,7 @@ signs up.  I fixed this by adding a check to the logger
 to ensure that if that information was not available
 we weren't trying to write it.
 
-[Fixes #2873942]
+[Finishes #2873942]
 ```
 
 [Further reading](http://ablogaboutcode.com/2011/03/23/proper-git-commit-messages-and-an-elegant-git-history/)
