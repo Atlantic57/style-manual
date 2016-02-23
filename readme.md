@@ -1,8 +1,8 @@
 # Coding Conventions
 
-We establish coding conventions in order to produce work that is legible, consistent and predicatble. By maintaing uniformity in our styles it we strive to share code more efficiently, minimizing time required to understand nuances. Please do your part to adhere to the conventions set forth in this manual, and kindly notify others — ideally in comments in pull requests — where there are deviations. 
+We establish coding conventions in order to produce work that is legible, consistent and predicatble. By maintaing uniformity in our styles it we strive to share code more efficiently, minimizing time required to understand nuances. Please do your part to adhere to the conventions set forth in this manual, and kindly notify others — ideally in comments in pull requests — where there are deviations.
 
-There will be legacy files, generated prior to this manual's creation, that do not conform to our conventions. If you're working on an older project, be consistent with what's already there. 
+There will be legacy files, generated prior to this manual's creation, that do not conform to our conventions. If you're working on an older project, be consistent with what's already there.
 
 
 ## Repository Naming
@@ -30,12 +30,39 @@ Chicago Community Trust email templates should be `cct-email-templates`
 
 ## Git Commits
 
-Commit messages should be prefixed with the ticket number that the work corresponds to. 
+Commit messages are comprised of 3 parts:
 
-`#123 - detailed commit message`
+* A short description of what is contained in the commit (max line-length 50 char)
+* A longer description of changes contained in commit (max line-length 72 char)
+* A footer that links to relevant pivotal/git issues.  If using pivotal, one may  
+  include the relevant pivotal id's along with the scm post-commit keywords.  
+  i.e. `[Fixes #12345789]` or `[Finished #123456768`]  
+  Further reading here: https://www.pivotaltracker.com/help/api?version=v3#scm_post_commit_message_syntax
+
+A git client like gitx may provide guidelines for adhereing to a max-length.
+
+![](_doc/max-line-length.png)
+
+Example:
+```
+Fixed bug where user can't signup.
+
+Users were unable to register if they hadn't visited the plans
+and pricing page because we expected that tracking
+information to exist for the logs we create after a user
+signs up.  I fixed this by adding a check to the logger
+to ensure that if that information was not available
+we weren't trying to write it.
+
+[Finishes #2873942]
+```
+
+[Further reading](http://ablogaboutcode.com/2011/03/23/proper-git-commit-messages-and-an-elegant-git-history/)
+
+
 
 ## Pull Requests
-Development for features should be done on separate branches and merged in via pull requests. PRs should be assigned to at least one other developer and approved prior to merge, but merging should be done by the developer submitting the request. 
+Development for features should be done on separate branches and merged in via pull requests. PRs should be assigned to at least one other developer and approved prior to merge, but merging should be done by the developer submitting the request.
 
 
 ## Languages
