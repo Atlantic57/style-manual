@@ -542,12 +542,12 @@ $foo->bar(
 
 There are many elements of style and practice intentionally omitted by this guide. These include but are not limited to:
 
-* Declaration of global variables and global constants
-* Declaration of functions
-* Operators and assignment
-* Inter-line alignment
-* Comments and documentation blocks
-* Class name prefixes and suffixes
-* Best practices
+* Declaration of global variables and global constants (prefer dependency injection/service container over globals?)
+* Declaration of functions (Same as methods but with preference for methods over functions?)
+* Operators and assignment (I feel like this is pretty straight forward and probably doesn't need anything outlined. Thoughts?)
+* Inter-line alignment (hmmm... Don't do it? I don't think it improves readability that much. What do you guys think. I'm not firmly opposed to it, I just don't know that it really makes a big difference.)
+* Comments and documentation blocks (should we use the [phpdoc](https://www.phpdoc.org/docs/latest/guides/docblocks.html) standards even if we don't actually use phpDocumentor?)
+* Class name prefixes and suffixes (I think we should avoid using `Interface` or `Class` as a suffix. It just seems unnecesary and overly verbose to me. I also feel like namespacing makes prefixes redundant. Thoughts?)
+* Best practices (This section should probably start simply and then get expanded as time goes on. As a baseline should we start with the assumption that our code should be seperated into models and services so we aren't mixing concerns? Any other baseline stuff?)
 
 Future recommendations *MAY* revise and extend this guide to address those or other elements of style and practice.
