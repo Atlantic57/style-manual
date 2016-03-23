@@ -112,7 +112,7 @@ Passing parameters to include files using `with` affords us most of the function
 And our include would look like:
 
 ```html
-{# mocules/article-preview.twig #}
+{# modules/article-preview.twig #}
 {# article [object] the article content that we're passing in #}
 {# mode [string] adds a modifier class to the container to control display #}
 
@@ -133,6 +133,19 @@ If you find common code being used in more than two places, it should be convert
 Keep templates as spartan as possible. While it is possible in Twig, avoid complex sets of conditional statements in favor of placing that logic in a PHP via Twig filters.
 
 Because each template should yield one component/module/fragment, most files should be fewer than 100 lines tall. Avoid excessive line breaks and use a break only to separate the top of a comment from the HTML above it. If the page is too difficult to read, your markup is likely too convoluted. 
+
+Spacing between lines of code should not be needed except to draw more attention to comments. Place one line above a comment to help others more quickly identify notes. 
+
+```html
+<div id="posts" class="row">
+	{# Print Posts #}
+	{% for post in posts | slice(1,length) if posts %}
+		{% include 'modules/listed-articles.twig' with { 'post' : post } %}
+	{% else %}
+		{% include 'modules/content-invitation.twig' %}
+	{% endfor %}
+</div>
+```
 
  
 
