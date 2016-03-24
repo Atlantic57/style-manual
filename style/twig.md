@@ -138,6 +138,7 @@ Spacing between lines of code should not be needed except to draw more attention
 
 ```html
 <div id="posts" class="row">
+
 	{# Print Posts #}
 	{% for post in posts | slice(1,length) if posts %}
 		{% include 'modules/listed-articles.twig' with { 'post' : post } %}
