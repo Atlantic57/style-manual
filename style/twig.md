@@ -88,9 +88,9 @@ Indent your code inside tags (use the same indentation as the one used for the t
 
 ```
 {% block foo %}
-   {% if true %}
-       true
-   {% endif %}
+  {% if true %}
+    true
+  {% endif %}
 {% endblock %}
 ```
 
@@ -105,7 +105,7 @@ Passing parameters to include files using `with` affords us most of the function
 ```
 {# index.twig #}
 {% for article in articles %}
-	{% include "modules/article-preview.twig" with { 'article': article, 'mode': 'tall' } only %}
+  {% include "modules/article-preview.twig" with { 'article': article, 'mode': 'tall' } only %}
 {% endfor %}
 ```
 
@@ -139,12 +139,12 @@ Spacing between lines of code should not be needed except to draw more attention
 ```html
 <div id="posts" class="row">
 
-	{# Print Posts #}
-	{% for post in posts | slice(1,length) if posts %}
-		{% include 'modules/listed-articles.twig' with { 'post' : post } %}
-	{% else %}
-		{% include 'modules/content-invitation.twig' %}
-	{% endfor %}
+  {# Print Posts #}
+  {% for post in posts | slice(1,length) if posts %}
+    {% include 'modules/listed-articles.twig' with { 'post' : post } %}
+  {% else %}
+    {% include 'modules/content-invitation.twig' %}
+  {% endfor %}
 </div>
 ```
 
