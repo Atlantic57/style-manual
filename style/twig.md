@@ -117,8 +117,8 @@ And our include would look like:
 {# mode [string] adds a modifier class to the container to control display #}
 
 <article class="article article--{{ mode }}">
-	<h2>{{ article.title }}</h2>
-	<p>{{ article.title }}</p>
+  <h2>{{ article.title }}</h2>
+  <p>{{ article.title }}</p>
 </article>
 ```
 
