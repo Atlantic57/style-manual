@@ -166,7 +166,7 @@ Be as descriptive as possible when creating components. Our generator, [Beastman
  
 ### Set
 
-Keep business logic out of twig files as much as possible. Ideally, the only use of `set` would be to leverage Timber objects:
+Keep business logic out of twig files as much as possible. Ideally, the only use of `set` within a .twig file would be to leverage Timber objects:
 
 ```
 TimberPost();
@@ -174,4 +174,6 @@ TimberImage();
 TimberTerm();
 ```
 
-For other uses, set variables in PHP. To minimize files, it is OK to set variables for various post types all within single.php, just use a `switch` statement to specifify what variables work on which post types. 
+The above is not an exhaustive list, they are just the most common.
+
+For other uses, set variables in PHP. To minimize files, it is OK to set variables for various post types all within `single.php`, just use a `switch` statement to specifify what variables work on which post types. 
