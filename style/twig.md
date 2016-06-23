@@ -148,5 +148,29 @@ Spacing between lines of code should not be needed except to draw more attention
 </div>
 ```
 
- 
+### Annotation
 
+Be as descriptive as possible when creating components. Our generator, [Beastman](https://github.com/AtlanticMediaStrategies/utils/tree/master/beastman), should scaffold much of this for you, so all you'd need to do is fill in the blanks. At minimum, describe what the component is used for and what arguments it accepts.
+
+{#
+ # Component: Expandable Panel Group
+ # A listing of panels for nesting content
+ #
+ # Args:
+ # - title {string}
+ # - content {wysiwyg}
+ # - theme {(minimal|overkill)}
+ #}
+ 
+### Set
+
+Keep business logic out of twig files as much as possible. Ideally, the only use of `set` would be to leverage Timber methods:
+
+```
+TimberPost();
+TimberImage();
+TimberTerm();
+etc
+```
+
+For other uses, set variables in PHP. To minimize files, it is OK to set variables for various post types all within single.php, just use a `switch` statement to specifify what variables work on which post types. 
